@@ -14,3 +14,13 @@ vim.opt.shiftwidth = 2       -- Indent by 2 spaces
 vim.opt.tabstop = 2          -- A tab character is 2 spaces
 vim.opt.softtabstop = 2      -- When hitting <Tab>, insert 2 spaces
 
+-- For some reason the above shit doens't work.
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "python",
+  callback = function()
+    vim.opt_local.expandtab = true
+    vim.opt_local.shiftwidth = 2
+    vim.opt_local.tabstop = 2
+    vim.opt_local.softtabstop = 2
+  end,
+})

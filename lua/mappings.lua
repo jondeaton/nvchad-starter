@@ -29,3 +29,4 @@ vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true })
 -- Select mode mappings
 vim.keymap.set("x", "<S-K>", ":move '<-2<CR>gv=gv", { desc = "Move selection up." })
 vim.keymap.set("x", "<S-J>", ":move '>+1<CR>gv=gv", { desc = "Move selection down." })
+

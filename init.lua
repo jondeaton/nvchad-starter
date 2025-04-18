@@ -21,15 +21,6 @@ require("lazy").setup({
     branch = "v2.5",
     import = "nvchad.plugins",
   },
-
-  "folke/tokyonight.nvim",
-  "EdenEast/nightfox.nvim",
-  "RRethy/vim-illuminate",
-  "HUAHUAI23/nvim-quietlight",
-  "catppuccin/nvim",
-  "chiendo97/intellij.vim",
-  "rafamadriz/neon",
-
   { import = "plugins" },
 }, lazy_config)
 
